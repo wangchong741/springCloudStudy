@@ -44,7 +44,7 @@ public class PaymentController {
         if (payment==null){
             return new CommenResult(444,"查询失败",null);
         }
-        return new CommenResult(200,"查询成功,serverPort:"+serverPort,payment);
+        return new CommenResult(200,"查询成功,serverPort"+serverPort,payment);
 
     }
 
