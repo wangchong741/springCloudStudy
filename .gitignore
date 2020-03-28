@@ -1,0 +1,33 @@
+#java
+*.class
+
+#package file
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+#maven ignore
+target/
+build/
+
+#Intellij idea
+.idea/
+/idea/
+*.ipr
+*.iml
+*.iws
+
+#eclipse ignore
+.settings/
+.project
+.classpatch
+
+# temp file
+*.log
+*.cache
+*.diff
+*.patch
+*.tmp
+/.gitignore
