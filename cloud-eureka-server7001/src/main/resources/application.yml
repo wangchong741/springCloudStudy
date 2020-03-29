@@ -8,4 +8,8 @@ eureka:
     register-with-eureka: false   #false表示不向注册中心注册自己
     fetch-registry: false   #false表示自己端就是注册中心,不需要去检查服务
     service-url:
-      defaultZone: http://eureka7002.com:7002/eureka/
+    #  defaultZone: http://eureka7002.com:7002/eureka/  #集群版。相互注册，7001注册7002
+      defaultZone: http://eureka7001.com:7001/eureka/   #单机 只有一台机器
+  server:
+    enable-self-preservation: false #自我保护开关 true默认开始
+    eviction-interval-timer-in-ms: 2000  #心跳时间
